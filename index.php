@@ -16,12 +16,6 @@
         'В Японии считается, что удачу приносит кот любого цвета, даже черного. Японцы так любят котов, что придумали котокафе – специальные кафе с кошками, куда может прийти любой желающий.'
     );
 
-    // $name = array(
-    //     'Моя страница',
-    //     'Главная',
-    //     'Оставить заявку',
-    //     'Вход',
-    // );
 ?>
 <head>
     <meta charset="UTF-8">
@@ -107,8 +101,12 @@
             <h1 class="main_h1">Коты</h1>
         </section>
         <section class="image_section">
-            <img src="images/cat.jpg" alt="Кот" width="400px">
-            <img src="images/cat2.jpg" alt="Кот2" width="400px">
+            <!-- echo '<img src="fotos/foto'.(date('s') % 2+1).'.jpg" alt="Меняющаяся фотография">'; -->
+            <!-- <img src="images/cat.jpg" alt="Кот" width="400px">
+            <img src="images/cat2.jpg" alt="Кот2" width="400px"> -->
+            <img <?php echo 'src="images/cat11_'.(date('s') % 2+1).'.jpg"'?> alt="Кот" width="400px">
+            <img <?php echo 'src="images/cat12_'.(date('s') % 2+1).'.jpg"'?> alt="Кот2" width="400px">
+
         </section>
         <section class="text">
             <h2>О котах</h2>

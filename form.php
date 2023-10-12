@@ -121,8 +121,10 @@
             <h2>Изображения</h2>
         </section>
         <section class="image_section" style="margin-bottom: 40px">
-            <img src="images/cat_req.jpg" alt="Кот" height="300px">
-            <img src="images/cat3.jpg" alt="Кот2" height="300px">
+            <!-- <img src="images/cat_req.jpg" alt="Кот" height="300px">
+            <img src="images/cat3.jpg" alt="Кот2" height="300px"> -->
+            <img <?php echo 'src="images/cat21_'.(date('s') % 2+1).'.jpg"'?> alt="Кот" height="300px">
+            <img <?php echo 'src="images/cat22_'.(date('s') % 2+1).'.jpg"'?> alt="Кот2" height="300px">
         </section>
     </main>
     <footer>
