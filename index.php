@@ -15,6 +15,13 @@
         'В носу кошки в два раза больше рецепторов, чем у нас, плюс они имеют дополнительный орган обоняния, расположенный на нёбе.',
         'В Японии считается, что удачу приносит кот любого цвета, даже черного. Японцы так любят котов, что придумали котокафе – специальные кафе с кошками, куда может прийти любой желающий.'
     );
+
+    // $name = array(
+    //     'Моя страница',
+    //     'Главная',
+    //     'Оставить заявку',
+    //     'Вход',
+    // );
 ?>
 <head>
     <meta charset="UTF-8">
@@ -26,25 +33,71 @@
     <header>
         <nav>
             <ul class="ul-menu">
-                <li class="menu main-page"><a href="index.php">Моя страница</a></li>
-                <li class="menu"><a href="index.php">Главная</a></li>
-                <li class="menu"><a href="form.php">Оставить заявку</a></li>
-                <li class="menu authorization"><a href="authorization.php">Вход</a></li>
-
-                <a href="<?php	// начинаем первый PHP скрипт
-
-                    $name='Вторая страница'; // переменная с текстом ссылки
-                    $link='page2.php';	// переменная с адресом ссылки
-                    $current_page=true;	// переменная, определяющая активность пункта меню
-
-                    echo $link;	// выводим адрес ссылки
-
-                    ?>"><?php	// начинаем второй PHP скрипт
-
-                    if( $current_page )	// если пункт меню активный
-                    echo ' class="selected_menu"'; // выводим соответствующий класс 
-                    echo $name;	// выводим текст ссылки
-                    ?></a>
+                <li class="menu main-page">
+                    <a href=" <?php	
+                        $name='Моя страница'; 
+                        $link='index.php';
+                        $current_page=true;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                        
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Главная'; 
+                        $link='index.php';
+                        $current_page=true;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Оставить заявку'; 
+                        $link='form.php';
+                        $current_page=false;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Вход'; 
+                        $link='authorization.php';
+                        $current_page=false;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
 
             </ul>
         </nav>

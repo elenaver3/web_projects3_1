@@ -14,10 +14,76 @@
     <header>
         <nav>
             <ul class="ul-menu">
-                <li class="menu main-page"><a href="index.php">Моя страница</a></li>
+                <!-- <li class="menu main-page"><a href="index.php">Моя страница</a></li>
                 <li class="menu"><a href="index.php">Главная</a></li>
                 <li class="menu"><a href="form.php">Оставить заявку</a></li>
-                <li class="menu authorization"><a href="authorization.php">Вход</a></li>
+                <li class="menu"><a href="authorization.php">Вход</a></li> -->
+                <li class="menu main-page">
+                    <a href=" <?php	
+                        $name='Моя страница'; 
+                        $link='index.php';
+                        $current_page=false;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                        
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Главная'; 
+                        $link='index.php';
+                        $current_page=false;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Оставить заявку'; 
+                        $link='form.php';
+                        $current_page=false;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href=" <?php	
+                        $name='Вход'; 
+                        $link='authorization.php';
+                        $current_page=true;	
+                        echo $link;	
+                        ?>"
+                            <?php if( $current_page )	
+                                echo ' class="selected_menu"';?>
+                        >
+                        
+                        <?php
+                            echo $name;	
+                        ?>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>

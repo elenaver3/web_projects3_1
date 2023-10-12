@@ -65,11 +65,9 @@ footer {
 
 .ul-menu {
     padding: 10px;
+    color: #2c13a8;
 }
 
-.authorization {
-    right: 0;
-}
 
 .image_section {
     text-align: center;
@@ -196,5 +194,5 @@ h2 {
 }
 
 .selected_menu {
-    color: #f0891b;
+    color: #FFECA1;
 }
