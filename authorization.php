@@ -28,10 +28,7 @@
                             <?php if( $current_page )	
                                 echo ' class="selected_menu"';?>
                         >
-                        
-                        <?php
-                            echo $name;	
-                        ?>
+                        <?=$name;?>
                         
                     </a>
                 </li>
@@ -45,10 +42,7 @@
                             <?php if( $current_page )	
                                 echo ' class="selected_menu"';?>
                         >
-                        
-                        <?php
-                            echo $name;	
-                        ?>
+                        <?=$name;?>
                     </a>
                 </li>
                 <li class="menu">
@@ -61,10 +55,7 @@
                             <?php if( $current_page )	
                                 echo ' class="selected_menu"';?>
                         >
-                        
-                        <?php
-                            echo $name;	
-                        ?>
+                        <?=$name;?>
                     </a>
                 </li>
                 <li class="menu">
@@ -77,10 +68,7 @@
                             <?php if( $current_page )	
                                 echo ' class="selected_menu"';?>
                         >
-                        
-                        <?php
-                            echo $name;	
-                        ?>
+                        <?=$name;?>
                     </a>
                 </li>
 
