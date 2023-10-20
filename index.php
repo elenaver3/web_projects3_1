@@ -89,9 +89,6 @@
             <h1 class="main_h1">Коты</h1>
         </section>
         <section class="image_section">
-            <!-- echo '<img src="fotos/foto'.(date('s') % 2+1).'.jpg" alt="Меняющаяся фотография">'; -->
-            <!-- <img src="images/cat.jpg" alt="Кот" width="400px">
-            <img src="images/cat2.jpg" alt="Кот2" width="400px"> -->
             <img <?php echo 'src="images/cat11_'.(date('s') % 2+1).'.jpg"'?> alt="Кот" width="400px">
             <img <?php echo 'src="images/cat12_'.(date('s') % 2+1).'.jpg"'?> alt="Кот2" width="400px">
 

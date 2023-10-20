@@ -14,10 +14,6 @@
     <header>
         <nav>
             <ul class="ul-menu">
-                <!-- <li class="menu main-page"><a href="index.php">Моя страница</a></li>
-                <li class="menu"><a href="index.php">Главная</a></li>
-                <li class="menu"><a href="form.php">Оставить заявку</a></li>
-                <li class="menu"><a href="authorization.php">Вход</a></li> -->
                 <li class="menu main-page">
                     <a href=" <?php	
                         $name='Моя страница'; 
@@ -97,8 +93,6 @@
             <h2>Изображения</h2>
         </section>
         <section class="image_section" style="margin-bottom: 40px">
-            <!-- <img src="images/cat_autho.jpg" alt="Кот" height="300px">
-            <img src="images/cat4.jpg" alt="Кот2" height="300px"> -->
             <img <?php echo 'src="images/cat31_'.(date('s') % 2+1).'.jpg"'?> alt="Кот" height="300px">
             <img <?php echo 'src="images/cat32_'.(date('s') % 2+1).'.jpg"'?> alt="Кот2" height="300px">
         </section>
